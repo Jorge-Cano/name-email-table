@@ -59,6 +59,20 @@
     </div>
   </main>
 </div>
+  <script>
+    (function(name,path,ctx){ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}})
+    ('KeenTracking', 'https://cdn.jsdelivr.net/npm/keen-tracking@4/dist/keen-tracking.min.js', this);
+
+    KeenTracking.ready(function(){
+      const client = new KeenTracking({
+        projectId: '5d3fd7edc9e77c0001229906',
+        writeKey: 'BA049183FFC27F049D3C92E5917D65B056CEE591E99772FE27101E01490F3493F2F4F4B1582AECEAA262932B4E2C8655D219C174C0095E4FD10AA1FB9B445387B3FB102D6B49EDC3D10EB310387673F71B4CEFBE6EBB974429521E6C72F8C79E'
+      });
+
+      // Record events automatically
+      client.initAutoTracking();
+    });
+  </script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script  src="js/index.js"></script>
 </body>

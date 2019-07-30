@@ -1,6 +1,6 @@
 $(document).ready(function(){
   function remove() {
-    $(".orange").click(function(){
+    $(".red").click(function(){
       $(this).closest("tr").remove();
     });
   }
